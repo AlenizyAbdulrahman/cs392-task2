@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "react-scriot test",
+    "build": "react-script test",
+    "test": "react-script test",
     "deploy": "main -d build"
 
   },
