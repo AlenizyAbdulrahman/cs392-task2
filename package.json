@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
+  "script": {
     "build": "react-script test",
     "test": "react-script test",
     "deploy": "main -d build"
