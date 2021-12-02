@@ -1,9 +1,9 @@
 
 language: node js
 node js:
-   - node
+   - 7
 before_script:
-  - npm install -g gulp-cli
+  - npm ci
 script: gulp
 before_install:
   - npm i -g npm@version-number
