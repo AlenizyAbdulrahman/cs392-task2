@@ -2,13 +2,9 @@
 language: node js
 node js:
    - 7
-before_script:
-  - npm ci
-script: gulp
-before_install:
-  - npm i -g npm@version-number
-cache:
-  npm: false
+env:
+- MY_VAR=EverythingIsAwesome
+- NODE_ENV=TEST
 
 
 repo_token: l1J5afY53Va7r0qewAtPvMsq7wWYKXonm
