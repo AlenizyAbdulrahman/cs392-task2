@@ -1,11 +1,14 @@
-sudo: false
+
 language: node js
 node js:
    - node
-script:
-   - npm run lint
-   - npm run test:coveralls
-nofications:
-  email: false
+before_script:
+  - npm install -g gulp-cli
+script: gulp
+before_install:
+  - npm i -g npm@version-number
+cache:
+  npm: false
+
 
 repo_token: l1J5afY53Va7r0qewAtPvMsq7wWYKXonm
