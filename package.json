@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "script": {
-    "build": "react-script test",
-    "test": "react-script test",
-    "deploy": "main -d build"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:coveralls": "jest --coverage --coverageReporters-text-lcov | coveralls",
+    "test:staged": "jest findRelatedTests"
 
   },
   "repository": {
