@@ -5,11 +5,10 @@ cache: npm
 script:
   - echo 'Build starts!!'
   - echo 'Installing Deps!'
-  - npm
   - echo 'Testing!'
-  - npm test:prod
+  - npm test
 install:
   - npm install -g firebase-tools
 after_success:
   - npm build
-  - firebase deploy --token "$FIREBASE_TOKEN"
+  - firebase deploy --token "$GITHUB_TOKEN"
