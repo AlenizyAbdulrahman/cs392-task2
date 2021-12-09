@@ -1,10 +1,15 @@
-
-language: node js
-node js:
-   - 7
-env:
-- MY_VAR=EverythingIsAwesome
-- NODE_ENV=TEST
-
-
-repo_token: l1J5afY53Va7r0qewAtPvMsq7wWYKXonm
+language: node_js
+node_js:
+  - "8"
+cache: yarn
+script:
+  - echo 'Build starts!!'
+  - echo 'Installing Deps!'
+  - yarn
+  - echo 'Testing!'
+  - yarn test:prod
+install:
+  - npm install -g firebase-tools
+after_success:
+  - yarn build
+  - firebase deploy --token "$FIREBASE_TOKEN"

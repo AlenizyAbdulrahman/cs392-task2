@@ -3,14 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <title>Your front-end</title>
+<link rel="stylesheet" href="master.css">
 </head>
 
 <body>
-<form action="/fasttext">
-	Enter your text to be classified<br>
-	<input type="text" name="statement">
-	<input type="submit" value="Submit">
-</form> 
+
+<header >
+	<img src="ccis.png" class="college">
+	<img src="imamu.jpg" class="university">
+	<h1 class="projectname">Food Prediction.</h1>
+</header>
+
+<div class="item">
+	<form action="/fasttext">
+		Enter your text to be classified<br>
+		<input type="text" id="clr" name="statement">
+		<input type="submit" value="Submit">
+		<button type="reset" value="Reset">Clear</button>
+	</form> 
+</div>
+
+<textarea name="text" id="area" cols="30" rows="10"></textarea>
+
+
+
 
 </body>
 
